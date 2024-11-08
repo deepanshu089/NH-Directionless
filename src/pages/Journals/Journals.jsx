@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const Journals = () => {
+const JournalsPage = () => {
   // Example journal entries
   const [entries] = useState([
     {
@@ -71,4 +71,4 @@ const Journals = () => {
   );
 };
 
-export default Journals;
+export default JournalsPage;

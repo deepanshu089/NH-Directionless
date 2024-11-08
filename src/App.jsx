@@ -6,7 +6,7 @@ import './App.css'
 import Home from "./pages/Home/Home";
 
 import Navbar from './components/Navbar/Navbar';
-import Journals from './pages/Journals/journals.jsx';
+import JournalsPage from './pages/Journals/journalsPage.jsx';
 import Footer from './components/Footer/Footer';
 import About from './pages/About/About';
 import Games from './pages/Games/Games';
@@ -26,7 +26,7 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
         <Route path='/games' element={<Games />}/>
-        <Route path='/journals' element={<Journals/>}/>
+        <Route path='/journals' element={<JournalsPage/>}/>
         <Route path='/quiz' element={<Quiz/>}/>
         <Route path='/contact' element={<Contact/>}/>
         </Routes>

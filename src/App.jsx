@@ -1,27 +1,36 @@
+
+
+
 import { Route, Routes } from 'react-router-dom'
 import './App.css'
 import Home from "./pages/Home/Home";
 import Navbar from './components/Navbar/Navbar';
+import Journals from './pages/Journals/journals';
 import Footer from './components/Footer/Footer';
 import About from './pages/About/About';
 import Games from './pages/Games/Games';
 import Quiz from './pages/Games/quiz';
+import Contact from './pages/Contacts/Contacts';
+
 
 function App() {
   
 
   return (
     <>
-      <Navbar />
-      <Games/>
+      <Navbar/>
+      
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
-        <Route path='/quiz' element ={<Quiz/>}/>
-      </Routes>
+        <Route path='/games' element={<Games />}/>
+        <Route path='/journals' element={<Journals/>}/>
+        <Route path='/quiz' element={<Quiz/>}/>
+        <Route path='/contact' element={<Contact/>}/>
+        </Routes>
       <Footer />
     </>
   )
 }
 
-export default App;
+export default App

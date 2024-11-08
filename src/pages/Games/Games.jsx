@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
-import { useNavigate } from 'react-router-dom';  // Import useNavigate hook
-import Quiz from './quiz';  // Import the Quiz component
+import Quiz from './quiz';
+import { useNavigate } from 'react-router-dom';
+
 
 const gamePosters = [
   { id: 1, src: 'https://res.cloudinary.com/dg361q5uv/image/upload/v1731064839/Track/jcfso52rtx8zgyjqlhiq.webp' },
@@ -39,10 +40,11 @@ const Games = () => {
     return () => clearInterval(intervalId);
   }, []);
 
-  // Handle click on game poster to navigate to quiz route
   const handlePosterClick = () => {
     navigate('/quiz');  // Navigate to the "/quiz" route
   };
+
+
 
   return (
     <div className="flex flex-col items-center overflow-x-hidden bg-gray-900 min-h-screen text-white p-8">

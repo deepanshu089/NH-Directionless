@@ -1,0 +1,76 @@
+.journalContainer {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .journalTitle {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .journalList {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .journalItem {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .entryTitle {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .entryDescription {
+    color: #666;
+    margin: 10px 0;
+  }
+  
+  .readMoreButton {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .readMoreButton:hover {
+    background-color: #2980b9;
+  }
+  
+  .entryDetail {
+    background-color: #f3f3f3;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .entryContent {
+    color: #444;
+    line-height: 1.6;
+  }
+  
+  .backButton {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s;
+  }
+  
+  .backButton:hover {
+    background-color: #c0392b;
+  }
+  

@@ -38,7 +38,7 @@ const Navbar = () => {
 
   return (
     <nav className="bg-black z-50 text-white sticky top-0">
-      <div className="lg:px-12 sm:px-7 max-w-9xl mx-auto max-h-24 flex justify-between items-center p-6">
+      <div className="lg:px-12 overflow-y-hidden sm:px-7 max-w-9xl mx-auto max-h-24 flex justify-between items-center p-6">
         
         <div className="flex cursor-pointer items-center"
         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
@@ -53,12 +53,12 @@ const Navbar = () => {
         </div>
 
         {/* Links Container */}
-        <div className="hidden md:flex space-x-6 text-xl font-spaced font-extrabold mx-auto">
+        <div className="hidden md:flex space-x-6 text-xl overflow-y-hidden font-spaced font-extrabold mx-auto">
           {links.map((link, index) => (
-            <button
+            <button 
               key={index}
               onClick={() => handleLinkClick(link.path)}
-              className={`relative group transition duration-300 
+              className={`relative group transition duration-300 overflow-y-hidden
                 ${location.pathname === link.path ? "text-gray-300" : ""}`}
             >
               <span className="relative z-10 px-4 py-2">

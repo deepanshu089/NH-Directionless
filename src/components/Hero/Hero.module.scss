@@ -1,0 +1,85 @@
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f5f0e1; 
+    overflow: hidden;
+    font-family: 'chewy', 'sans-serif';
+  
+    h1 {
+      position: relative;
+      z-index: 2;
+      font-size: 4rem;
+      color: #333;
+      margin-top: -10rem;
+    }
+  }
+  
+  .balloon {
+    position: absolute;
+    width: 60px;
+    height: 80px;
+    background-color: #ff7eb9;
+    border-radius: 50% 50% 0 0;
+    opacity: 0.8;
+    z-index: 1;
+    animation: floatUp 5s infinite ease-in-out;
+    overflow-y: hidden;
+  
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 2px;
+      height: 20px;
+      background-color: #ff7eb9;
+    }
+  
+    &:nth-child(1) {
+      left: 30%;
+      animation-delay: 0s;
+      top: 10%;
+    }
+  
+    &:nth-child(2) {
+      left:10%;
+      background-color: #ff6f91;
+      animation-delay: 1s;
+      top: 40%;
+    }
+  
+    &:nth-child(3) {
+      left: 90%;
+      background-color: #ff9671;
+      animation-delay: 2s;
+      top: 40%;
+    }
+    &:nth-child(4) {
+      left: 90%;
+      background-color: #ff9671;
+      animation-delay: 2s;
+      top: 10%;
+    }
+    &:nth-child(5) {
+      left: 10%;
+      background-color: #ff9671;
+      animation-delay: 2s;
+      top: 10%;
+    }
+  }
+  
+  @keyframes floatUp {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-30px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }

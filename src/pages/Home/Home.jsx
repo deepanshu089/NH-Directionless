@@ -1,11 +1,16 @@
 import React from 'react'
+import Hero from '../../components/Hero/Hero'
+import BearPopup from '../../components/BearPopup/BearPopup'
+
 
 const Home = () => {
   return (
     <div>
-      Home
+      <Hero />
+      <BearPopup />
+      
     </div>
   )
 }
 
-export default Home
+export default Home;

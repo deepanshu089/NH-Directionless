@@ -1,8 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
-import Quiz from './quiz';
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
-
 
 const gamePosters = [
   { id: 1, src: 'https://res.cloudinary.com/dg361q5uv/image/upload/v1731064839/Track/jcfso52rtx8zgyjqlhiq.webp' },
@@ -12,61 +9,38 @@ const gamePosters = [
 ];
 
 const Games = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const navigate = useNavigate();  // Hook to navigate to a different route
+  const navigate = useNavigate(); 
 
-  // Function to handle sliding
-  const handlePrev = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? gamePosters.length - 1 : prevIndex - 1
-    );
-  };
-
-  const handleNext = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === gamePosters.length - 1 ? 0 : prevIndex + 1
-    );
-  };
-
-  // Automatically slide the poster every 2 seconds
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setCurrentIndex((prevIndex) =>
-        prevIndex === gamePosters.length - 1 ? 0 : prevIndex + 1
-      );
-    }, 2000); // 2 seconds
-
-    // Clear interval when component unmounts
-    return () => clearInterval(intervalId);
-  }, []);
-
+ 
   const handlePosterClick = () => {
-    navigate('/quiz');  // Navigate to the "/quiz" route
+    navigate('/quiz'); 
   };
-
-
 
   return (
-    <div className="flex flex-col items-center overflow-x-hidden bg-gray-900 min-h-screen text-white p-8">
-      {/* Horizontal Layout: Game Banner, Pooh's Play Area, Another Game Banner */}
-      <div className="flex items-center justify-center w-full space-x-36 mb-12">
-        {/* Left Floating Banner */}
+    <div className="flex flex-col items-center overflow-x-hidden bg-gray-900 min-h-screen text-white px-4 py-8 md:px-8">
+     
+      <div className="flex flex-col items-center justify-center w-full space-y-8 md:space-y-0 md:flex-row md:space-x-8 lg:space-x-36 mb-12">
+        
         <div
-          className="floating-banner w-1/4 h-80 bg-cover rounded-lg flex items-center justify-center shadow-lg animate-float-left"
+          className="floating-banner w-full h-40 sm:h-60 md:w-1/4 md:h-80 bg-cover rounded-lg flex items-center justify-center shadow-lg animate-float-left"
           style={{
             backgroundImage:
               "url('https://res.cloudinary.com/dg361q5uv/image/upload/v1731064234/Track/vok2mbxicpshmbqxdxmn.webp')",
           }}
         ></div>
 
-        {/* Funky Text in the Middle */}
-        <h1 className="text-5xl font-extrabold text-yellow-400 animate-bounce">
-          Pooh's Play Area
-        </h1>
+        <div className="text-center px-4 md:px-0">
+          <h1 className="text-3xl h-[60px] mt-10 md:text-4xl lg:text-5xl font-extrabold text-yellow-400 animate-bounce mb-4 overflow-y-hidden ">
+            Pooh's Play Area
+          </h1>
+          <h3 className="text-base md:text-lg lg:text-xl font-semibold text-white max-w-lg">
+            In the heart of the forest, a bear's poo reveals the importance of nature's playground. Just as bears roam freely, we too should embrace the outdoors. Real games foster creativity, teamwork, and physical health, unlike screens that isolate us. Let’s step outside, explore, and reconnect with the world around us! See our collection of games to reduce your screen time.
+          </h3>
+        </div>
 
-        {/* Right Floating Banner */}
+       
         <div
-          className="floating-banner w-1/4 h-80 bg-cover rounded-lg flex items-center justify-center shadow-lg animate-float-right"
+          className="floating-banner w-full h-40 sm:h-60 md:w-1/4 md:h-80 bg-cover rounded-lg flex items-center justify-center shadow-lg animate-float-right"
           style={{
             backgroundImage:
               "url('https://res.cloudinary.com/dg361q5uv/image/upload/v1731064234/Track/z1op5lb0odwtwrwsolji.webp')",
@@ -74,50 +48,24 @@ const Games = () => {
         ></div>
       </div>
 
-      {/* Game Poster Slider */}
-      <div className="relative overflow-x-hidden  w-full max-w-4xl flex items-center">
-        {/* Left Button */}
-        <button
-          onClick={handlePrev}
-          className="absolute left-4 z-10 bg-gray-800 hover:bg-gray-700 text-white p-3 rounded-full shadow-lg"
-        >
-          <FaChevronLeft />
-        </button>
-
-        {/* Cards Container */}
-        <div className="w-full bg-cover flex overflow-hidden justify-center">
+      
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 max-w-6xl w-full px-4 md:px-0">
+        {gamePosters.map((poster) => (
           <div
-            className="flex transition-transform duration-700 ease-in-out"
-            style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+            key={poster.id}
+            className="relative h-60 w-full sm:h-72 md:h-80 bg-gray-800 rounded-lg shadow-lg overflow-hidden cursor-pointer transform hover:scale-105 transition-transform duration-300"
+            onClick={handlePosterClick}
           >
-            {gamePosters.map((poster, index) => (
-              <div
-                key={poster.id}
-                className="w-full flex-shrink-0 p-4"
-                onClick={handlePosterClick} // Handle poster click
-              >
-                <div className="relative h-160 w-full bg-gray-800 rounded-lg shadow-lg">
-                  <img
-                    src={poster.src}
-                    alt={`Game ${index + 1}`}
-                    className="w-full h-full object-cover rounded-lg transform hover:scale-105 transition-all duration-500"
-                    style={{
-                      clipPath: 'polygon(0 0, 95% 0, 100% 95%, 5% 100%)',
-                    }}
-                  />
-                </div>
-              </div>
-            ))}
+            <img
+              src={poster.src}
+              alt={`Game ${poster.id}`}
+              className="w-full h-full object-cover"
+              style={{
+                clipPath: 'polygon(0 0, 95% 0, 100% 95%, 5% 100%)',
+              }}
+            />
           </div>
-        </div>
-
-        {/* Right Button */}
-        <button
-          onClick={handleNext}
-          className="absolute right-4 z-10 bg-gray-800 hover:bg-gray-700 text-white p-3 rounded-full shadow-lg"
-        >
-          <FaChevronRight />
-        </button>
+        ))}
       </div>
     </div>
   );

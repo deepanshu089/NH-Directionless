@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 
 const JournalsPage = () => {
-  // Example journal entries
   const [entries] = useState([
     {
       id: 1,
@@ -36,7 +35,6 @@ const JournalsPage = () => {
 
   return (
     <div className="p-6 bg-gradient-to-r from-blue-500 to-green-500 min-h-screen">
-      {/* Main Journal Container */}
       {selectedEntry ? (
         <div className="bg-white p-8 rounded-lg shadow-lg max-w-4xl mx-auto animate__animated animate__fadeIn">
           <button

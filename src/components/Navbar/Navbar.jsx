@@ -8,6 +8,7 @@ const links = [
   { name: 'Games', path: '/games' },
   { name: 'Journals', path: '/journals' },
   { name: 'Contact', path: '/contact' },
+  { name: 'Talk', path: '/talk' },
 ];
 
 const Navbar = () => {

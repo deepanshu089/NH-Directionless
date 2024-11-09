@@ -12,6 +12,7 @@ import About from './pages/About/About';
 import Games from './pages/Games/Games';
 import Quiz from './pages/Games/quiz';
 import Contact from './pages/Contacts/Contacts';
+import Chatbot from './pages/Chatbot/Chatbot';
 
 
 function App() {
@@ -29,6 +30,8 @@ function App() {
         <Route path='/journals' element={<JournalsPage/>}/>
         <Route path='/quiz' element={<Quiz/>}/>
         <Route path='/contact' element={<Contact/>}/>
+        <Route path='/talk' element={<Chatbot/>}/>
+
         </Routes>
       <Footer />
     </>

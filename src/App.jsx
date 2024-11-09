@@ -3,7 +3,7 @@ import "./App.css";
 import Home from "./pages/Home/Home";
 
 import Navbar from "./components/Navbar/Navbar";
-import JournalsPage from "./pages/Journals/journals.jsx";
+import JournalsPage from "./pages/Journals/Journals.jsx";
 import Footer from "./components/Footer/Footer";
 import About from "./pages/About/About";
 import Games from "./pages/Games/Games";

@@ -9,7 +9,7 @@ const Home = () => {
     <div>
       <Hero />
       <BearPopup />
-      
+      <Textimageinfo />
     </div>
   )
 }

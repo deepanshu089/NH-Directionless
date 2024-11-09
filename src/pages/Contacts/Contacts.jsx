@@ -35,7 +35,7 @@ const Contact = () => {
   return (
     <div className="min-h-screen bg-gray-100 p-6 flex flex-col items-center">
       <div className="max-w-4xl w-full bg-white p-8 rounded-lg shadow-lg">
-        <h1 className="text-4xl font-bold text-center text-blue-600 mb-6">Contact Us</h1>
+        <h1 className="text-4xl font-bold text-center text-blue-600 mb-6 overflow-y-hidden">Contact Us</h1>
         {submitted ? (
           <div className="text-center text-green-500">
             <p>Thank you for contacting us! We will get back to you soon.</p>

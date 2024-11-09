@@ -1,21 +1,28 @@
-.textimage {
-    height: auto;
-    display: flex;
-    padding: 1rem 2rem;
+.textimageinfo {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #F5F0E1;
+    padding-bottom: 2rem;
 
-    .imagebox {
-        width: 25rem;
-        overflow-y: hidden;
-        height: 30rem;
+    .sctn1 {
+        height: auto;
+        display: flex;
+        padding: 0 5rem;
+        gap: 4rem;
 
         img {
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
+            width: 30rem;
+            height: 30rem;
+            border-radius: 50%;
+        }
+
+        .textbox {
+            
+            padding: 2rem;
+            margin: auto;
+            width: 40%;
+            font-size: 1.25rem;
         }
     }
-
-    .textBox {
-        width: 50%;
-    }
+    
 }

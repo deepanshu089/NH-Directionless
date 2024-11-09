@@ -9,9 +9,9 @@ const BearPopup = () => {
     const handleScroll = () => {
       const currentScrollPos = window.scrollY;
       if (currentScrollPos < lastScrollPos) {
-        setShowPopup(true); // Show popup when scrolling up
+        setShowPopup(true); 
       } else {
-        setShowPopup(false); // Hide popup when scrolling down
+        setShowPopup(false); 
       }
       setLastScrollPos(currentScrollPos);
     };

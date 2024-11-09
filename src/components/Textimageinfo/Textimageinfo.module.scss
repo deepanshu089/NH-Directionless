@@ -1,0 +1,21 @@
+.textimage {
+    height: auto;
+    display: flex;
+    padding: 1rem 2rem;
+
+    .imagebox {
+        width: 25rem;
+        overflow-y: hidden;
+        height: 30rem;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .textBox {
+        width: 50%;
+    }
+}

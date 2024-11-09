@@ -35,6 +35,7 @@ function Hero() {
         <div className={styles.balloon} />
         <div className={styles.balloon} />
         <div className={styles.balloon} />
+        
         <h1>Welcome to Pooh's Paradise</h1>
       </div>
     </>

@@ -1,8 +1,5 @@
-
-
-
-import { Route, Routes } from 'react-router-dom'
-import './App.css'
+import { Route, Routes } from "react-router-dom";
+import "./App.css";
 import Home from "./pages/Home/Home";
 
 import Navbar from './components/Navbar/Navbar';
@@ -16,13 +13,10 @@ import Chatbot from './pages/Chatbot/Chatbot';
 
 
 function App() {
-  
-
   return (
     <>
-      
-      <Navbar/>
-      
+      <Navbar />
+
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />

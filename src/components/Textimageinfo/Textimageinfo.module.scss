@@ -1,0 +1,28 @@
+.textimageinfo {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #F5F0E1;
+    padding-bottom: 2rem;
+
+    .sctn1 {
+        height: auto;
+        display: flex;
+        padding: 0 5rem;
+        gap: 4rem;
+
+        img {
+            width: 30rem;
+            height: 30rem;
+            border-radius: 50%;
+        }
+
+        .textbox {
+            
+            padding: 2rem;
+            margin: auto;
+            width: 40%;
+            font-size: 1.25rem;
+        }
+    }
+    
+}

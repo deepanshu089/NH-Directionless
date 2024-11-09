@@ -10,9 +10,9 @@ const Footer = () => {
     </div>
     <div className={styles.footersection}>
         <h3>Quick Links</h3>
-        <a href="#">Home</a> |
-        <a href="#">Services</a> |
-        <a href="#">Contact</a>
+        <a href="#" style={{margin: '10px'}}>Home</a> |
+        <a href="#" style={{margin: '10px'}}>Services</a> |
+        <a href="#" style={{margin: '10px'}}>Contact</a>
     </div>
     <div className={styles.footersection}>
         <h3>Contact Us</h3>

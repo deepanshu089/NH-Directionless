@@ -60,7 +60,7 @@ const Games = () => {
         ></div>
 
         {/* Funky Text in the Middle */}
-        <h1 className="text-5xl font-extrabold text-yellow-400 animate-bounce">
+        <h1 className="text-5xl font-extrabold text-yellow-400 animate-bounce overflow-y-hidden">
           Pooh's Play Area
         </h1>
 

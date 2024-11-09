@@ -6,7 +6,7 @@ import Home from "./pages/Home/Home";
 import SchedulerForm from './components/Scheduler/SchedulerForm';
 import ScheduleGenerate from './components/Scheduler/ScheduleGenerate';
 import Navbar from './components/Navbar/Navbar';
-import JournalsPage from './pages/Journals/journals.jsx';
+import JournalsPage from './pages/Journals/Morals';
 import Footer from './components/Footer/Footer';
 import About from './pages/About/About';
 import Games from './pages/Games/Games';

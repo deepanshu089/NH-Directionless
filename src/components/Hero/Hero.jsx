@@ -9,10 +9,10 @@ function Hero() {
   });
 
   const detectSize = () => {
-    setDimension((prev) => ({
-      ...prev,
+    setDimension({
       width: window.innerWidth,
-    }));
+      height: window.innerHeight,
+    });
   };
 
   useEffect(() => {
@@ -20,25 +20,19 @@ function Hero() {
     return () => {
       window.removeEventListener("resize", detectSize);
     };
-  }, [windowDimension]);
+  }, []);
 
   return (
-    <>
-      <div className={styles.hero}>
-        <ReactConfetti
-          width={windowDimension.width}
-          height={windowDimension.height}
-        />
-        <div className={styles.balloon} />
-        <div className={styles.balloon} />
-        <div className={styles.balloon} />
-        <div className={styles.balloon} />
-        <div className={styles.balloon} />
-        <div className={styles.balloon} />
-        
-        <h1>Welcome to Pooh's Paradise</h1>
-      </div>
-    </>
+    <div className={styles.hero}>
+      <ReactConfetti
+        width={windowDimension.width}
+        height={windowDimension.height}
+      />
+      {[...Array(6)].map((_, index) => (
+        <div key={index} className={styles.balloon} />
+      ))}
+      <h1 className={styles.heroTitle}>Welcome to Pooh's Paradise</h1>
+    </div>
   );
 }
 

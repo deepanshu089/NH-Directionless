@@ -119,8 +119,8 @@ const Navbar = () => {
         <div className="flex items-center justify-between p-4 cursor-pointer">
           <Link to="/" onClick={toggleMenu}>
             <img
-              src="https://res.cloudinary.com/dqmktpekh/image/upload/f_auto,q_auto/npansp6k2ntw7qeoqoms"
-              alt="NERDS Logo"
+              src="https://res.cloudinary.com/dg361q5uv/image/upload/v1731070311/Track/trnpwwy3dcqsv6pegdj2.jpg"
+              alt=" Logo"
               className="h-10 ml-0"
             />
           </Link>

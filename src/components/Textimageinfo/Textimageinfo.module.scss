@@ -3,26 +3,69 @@
     min-height: 100vh;
     background-color: #F5F0E1;
     padding-bottom: 2rem;
-
+  
     .sctn1 {
-        height: auto;
-        display: flex;
-        padding: 0 5rem;
-        gap: 4rem;
-
+      height: auto;
+      display: flex;
+      padding: 0 5rem;
+      gap: 4rem;
+      flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  
+      img {
+        width: 30rem; /* Default width */
+        height: 30rem;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+  
+      .textbox {
+        padding: 2rem;
+        margin: auto;
+        width: 40%; /* Default width */
+        font-size: 1.25rem;
+        line-height: 1.6;
+      }
+  
+      /* Responsive Design for smaller screens */
+      @media (max-width: 1024px) {  /* Tablets */
+        padding: 0 2rem;  /* Less padding for tablets */
+        gap: 2rem; /* Reduce the gap */
+        flex-direction: column; /* Stack the image and text */
+        align-items: center; /* Center content */
+        
         img {
-            width: 30rem;
-            height: 30rem;
-            border-radius: 50%;
+          width: 80%; /* Smaller images for tablets */
+          height: auto; /* Maintain aspect ratio */
         }
-
+  
         .textbox {
-            
-            padding: 2rem;
-            margin: auto;
-            width: 40%;
-            font-size: 1.25rem;
+          width: 90%; /* Textbox takes more width on smaller screens */
+          font-size: 1rem; /* Adjust font size */
+          padding: 1.5rem; /* Less padding on text box */
         }
+      }
+  
+      @media (max-width: 768px) {  /* Smaller tablets */
+        .textbox {
+          font-size: 0.95rem; /* Reduce font size for smaller tablets */
+        }
+  
+        img {
+          width: 85%; /* Reduce image size further for smaller screens */
+        }
+      }
+  
+      @media (max-width: 480px) {  /* Mobile screens */
+        .textbox {
+          font-size: 0.9rem; /* Smaller font size */
+          padding: 1rem; /* Smaller padding */
+        }
+  
+        img {
+          width: 90%; /* Images even smaller for mobile */
+          height: auto; /* Maintain aspect ratio */
+        }
+      }
     }
-    
-}
+  }
+  

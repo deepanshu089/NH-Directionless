@@ -14,6 +14,7 @@ import Quiz from './pages/Games/quiz';
 import Contact from './pages/Contacts/Contacts';
 import Chatbot from './pages/Chatbot/Chatbot';
 import { useState } from 'react';
+import Profile from './pages/Profile/Profile';
 
 function App() {
   const [studyPlan, setStudyPlan] = useState(null);
@@ -35,6 +36,7 @@ function App() {
         <Route path='/talk' element={<Chatbot/>}/>
         <Route path='/scheduler' element={<SchedulerForm onGenerate={handleGeneratePlan} />} />
         <Route path='/schedule-generate' element={<ScheduleGenerate studyPlan={studyPlan} />} />
+        <Route path='/profile' element={<Profile/>}/>
       </Routes>
       <Footer />
     </>

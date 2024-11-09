@@ -82,11 +82,11 @@ const Navbar = () => {
         {/* Conditionally render circle images or login button based on login status */}
         {isAuthenticated ? (
           <div className="hidden md:flex space-x-4">
-            <img
+            <Link to='/profile'><img
               src="https://res.cloudinary.com/dludtk5vz/image/upload/v1731165363/WhatsApp_Image_2024-11-09_at_20.45.28_3d38d5eb_eh28a3.jpg"
               alt="Circle 1"
               className="h-14 w-14 rounded-full border-2 border-white"
-            />
+            /></Link>
             <img
               src="https://res.cloudinary.com/dludtk5vz/image/upload/v1731077632/Badge7_anw3io.jpg"
               alt="Circle 2"

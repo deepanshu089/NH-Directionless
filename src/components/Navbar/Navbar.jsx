@@ -62,11 +62,7 @@ const Navbar = () => {
             alt=" Logo"
             className="h-16 mr-8"
           />
-          <span className="hidden md:block text-2xl font-ethenocentric font-semibold cursor-pointer">
-            <span className="hover:[text-shadow:_0_5px_100px_rgba(0,255,255,0.9),_0_0_15px_rgba(0,255,255,1),_0_0_200px_rgba(0,255,255,1),_0_0_100px_rgba(99,102,241,0.8);] hover:text-[#00FFFF]">
-              SCREENSAGE
-            </span>
-          </span>
+          
         </div>
 
         <div className="hidden md:flex space-x-6 text-xl overflow-y-hidden font-spaced font-extrabold mx-auto">

@@ -1,8 +1,11 @@
-# React + Vite
+# Web based platform for children
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- It helps to reduce the screen time of students with the help of AI integrated chatbot.
+- ML model to predict risk of high screentime based on user data.
 
-Currently, two official plugins are available:
+# Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Gamified learning with children friendly UI.
+- Screen time recorder.
+- Schedule fixer to save time to make schedule using ML.
+- Proper authentication with parents. 

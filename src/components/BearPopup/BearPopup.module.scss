@@ -1,0 +1,44 @@
+.bearpopup {
+  position: fixed;
+  bottom: 20px;
+  right: 40%;
+  width: 20rem;  /* Default width for large screens */
+  height: 20rem; /* Default height for large screens */
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  z-index: 10;
+  pointer-events: none; 
+  
+  &.show {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  .bearImage {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Responsive styles */
+  @media (max-width: 1024px) {  /* Tablets */
+    right: 30%;  /* Adjust position */
+    width: 18rem;  /* Smaller width */
+    height: 18rem;  /* Smaller height */
+  }
+
+  @media (max-width: 768px) {  /* Tablets and smaller */
+    right: 20%;  /* Adjust position */
+    width: 16rem;  /* Smaller width */
+    height: 16rem;  /* Smaller height */
+  }
+
+  @media (max-width: 480px) {  /* Mobile devices */
+    right: 10%;  /* Further adjust position */
+    width: 12rem;  /* Smaller width */
+    height: 12rem;  /* Smaller height */
+  }
+}

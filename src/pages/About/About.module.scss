@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+
+body {
+  font-family: 'Chewy', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.about {
+  padding: 20px;
+  background-color: #d3d3d3;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding-top: 2rem;
+}
+
+.meetPoohSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.imageContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textContainer {
+  flex: 1;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.textContainer:hover {
+  transform: scale(1.05);
+}
+
+.textContainer h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #7225a5;
+  margin-bottom: 20px;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 10px 0;
+  border-bottom: 3px solid #3498db;
+}
+
+.textContainer p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 16px;
+  transition: transform 0.3s ease;
+}
+
+.image:hover {
+  transform: scale(1.1);
+}
+
+.familySection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.textLeft {
+  flex: 1;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.textLeft:hover {
+  transform: scale(1.05);
+}
+
+.textLeft h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #3498db;
+  margin-bottom: 20px;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 10px 0;
+  border-bottom: 3px solid #3498db;
+}
+
+.textLeft p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.imageRight {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.familySection img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 16px;
+  transition: transform 0.3s ease;
+}
+
+.familySection img:hover {
+  transform: scale(1.1);
+}
+
+.homeSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-top: 40px;
+  flex-direction: row-reverse;
+}
+
+.homeSection .textLeft {
+  flex: 1;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.homeSection .textLeft:hover {
+  transform: scale(1.05);
+}
+
+.homeSection .textLeft h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #4e12f3;
+  margin-bottom: 20px;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 10px 0;
+  border-bottom: 3px solid #4e12f3;
+}
+
+.homeSection .textLeft p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.homeSection .imageRight {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homeSection img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 16px;
+  transition: transform 0.3s ease;
+}
+
+.homeSection img:hover {
+  transform: scale(1.1);
+}

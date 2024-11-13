@@ -1,0 +1,56 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  
+  .left {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+  
+  .input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  .submitButton {
+    padding: 10px 20px;
+    background-color: #4c9bf1;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background-color: #3399ff;
+    }
+  }
+  
